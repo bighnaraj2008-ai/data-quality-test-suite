@@ -18,3 +18,25 @@ CREATE TABLE events (
     user_id     INTEGER,
     occurred_at TEXT
 );
+
+-- ---------------------------------------------------------------------------
+-- 120 users across 60 days
+-- ---------------------------------------------------------------------------
+WITH RECURSIVE seq(i) AS (
+    SELECT 1
+    UNION ALL
+    SELECT i + 1 FROM seq WHERE i < 120
+)
+INSERT INTO users (id, email, created_at, age, country)
+SELECT
+    i,
+    'user' || i || '@example.com',
+    date('now', '-' || ((120 - i) % 60) || ' day'),
+    18 + (i * 7) % 53,
+    CASE (i % 4)
+        WHEN 0 THEN 'US'
+        WHEN 1 THEN 'DE'
+        WHEN 2 THEN 'IN'
+        ELSE 'BR'
+    END
+FROM seq;
