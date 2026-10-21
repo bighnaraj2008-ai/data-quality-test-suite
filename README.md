@@ -13,3 +13,6 @@ Every test is a single portable SQL query following one simple contract:
 # 1. Seed database and run complete test suite
 bash scripts/run_tests.sh --db target/quality.db --seed
 ```
+
+## CI Integration
+Automated workflow `.github/workflows/ci.yml` runs on every pull request and push to `main`.
