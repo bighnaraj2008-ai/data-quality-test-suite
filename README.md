@@ -22,3 +22,6 @@ See [docs/FAQ.md](docs/FAQ.md) for architectural FAQs.
 
 ## Troubleshooting
 See [docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md) for triage playbooks.
+
+## Data Governance
+Review our enterprise SLA commitments in [docs/DATA_GOVERNANCE.md](docs/DATA_GOVERNANCE.md).
