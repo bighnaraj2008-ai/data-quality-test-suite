@@ -10,3 +10,8 @@ Every test is a pure ANSI/SQLite SQL query following the dbt-style contract:
 - `assert_no_null_users.sql`: Validates `id`, `email`, `created_at`, `age`, and `country` are non-null.
 - `assert_no_null_events.sql`: Validates `id`, `user_id`, `event_type`, and `occurred_at` are non-null.
 - `assert_no_null_foreign_keys.sql`: Validates all foreign key references are non-null.
+
+## 2. Uniqueness Checks (`tests/duplicates/`)
+- `assert_unique_user_emails.sql`: Validates uniqueness of user emails natural key.
+- `assert_unique_event_ids.sql`: Validates primary key uniqueness on events.
+- `assert_unique_composite_keys.sql`: Validates uniqueness of composite tuples.
