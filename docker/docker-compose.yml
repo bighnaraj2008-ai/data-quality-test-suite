@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  test-db:
+    image: postgres:15-alpine
+    container_name: dq-test-postgres
+    environment:
+      POSTGRES_DB: data_quality
+      POSTGRES_USER: dq_user
+      POSTGRES_PASSWORD: dq_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./init_db.sql:/docker-entrypoint-initdb.d/init_db.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U dq_user -d data_quality"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
