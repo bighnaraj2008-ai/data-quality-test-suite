@@ -1,0 +1,23 @@
+# Compiled / Database Artifacts
+*.db
+*.sqlite
+*.sqlite3
+target/
+
+# Local logs
+*.log
+
+# Environment files
+.env
+.env.*
+
+# Hidden IDE & Editor configurations
+.idea/
+.vscode/
+.antigravity/
+.cursor/
+.claude/
+
+# OS artifacts
+.DS_Store
+Thumbs.db
