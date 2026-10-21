@@ -1,0 +1,4 @@
+-- ============================================================================
+-- Data Drift & Volume Detection Module
+-- Validates daily row counts and categorical distributions against historical baselines.
+-- ============================================================================
