@@ -31,3 +31,6 @@ See [docs/PERFORMANCE.md](docs/PERFORMANCE.md) for scaling best practices.
 
 ## Writing Custom Tests
 Refer to the [docs/TEST_WRITING_GUIDE.md](docs/TEST_WRITING_GUIDE.md) tutorial.
+
+## Metrics Dictionary
+Check out [docs/METRICS_DICTIONARY.md](docs/METRICS_DICTIONARY.md) for full metric coverage definitions.
