@@ -40,3 +40,23 @@ SELECT
         ELSE 'BR'
     END
 FROM seq;
+
+-- ---------------------------------------------------------------------------
+-- 1500 events, exactly 25 per day for the last 60 days
+-- ---------------------------------------------------------------------------
+WITH RECURSIVE seq(i) AS (
+    SELECT 1
+    UNION ALL
+    SELECT i + 1 FROM seq WHERE i < 1500
+)
+INSERT INTO events (id, event_type, user_id, occurred_at)
+SELECT
+    i,
+    CASE
+        WHEN i % 10 < 5 THEN 'page_view'
+        WHEN i % 10 < 8 THEN 'click'
+        ELSE 'purchase'
+    END,
+    ((i * 13) % 120) + 1,
+    date('now', '-' || (i % 60) || ' day')
+FROM seq;
