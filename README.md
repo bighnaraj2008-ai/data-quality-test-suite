@@ -16,3 +16,6 @@ bash scripts/run_tests.sh --db target/quality.db --seed
 
 ## CI Integration
 Automated workflow `.github/workflows/ci.yml` runs on every pull request and push to `main`.
+
+## Frequently Asked Questions
+See [docs/FAQ.md](docs/FAQ.md) for architectural FAQs.
