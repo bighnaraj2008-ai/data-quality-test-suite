@@ -26,3 +26,10 @@ jobs:
           --health-interval 10s
           --health-timeout 5s
           --health-retries 5
+
+      - name: Run Test Suite
+        run: |
+          bash scripts/run_tests.sh --db target/quality.db --seed
+      - name: Generate Quality Report
+        run: |
+          bash scripts/generate_report.sh docs/CI_REPORT.md
