@@ -34,3 +34,6 @@ Refer to the [docs/TEST_WRITING_GUIDE.md](docs/TEST_WRITING_GUIDE.md) tutorial.
 
 ## Metrics Dictionary
 Check out [docs/METRICS_DICTIONARY.md](docs/METRICS_DICTIONARY.md) for full metric coverage definitions.
+
+## Alerting & Incident Response
+Incident procedures are documented in [docs/ALERTING.md](docs/ALERTING.md).
