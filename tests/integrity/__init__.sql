@@ -1,0 +1,4 @@
+-- ============================================================================
+-- Referential Integrity Module
+-- Validates relational consistency and chronological logic between entities.
+-- ============================================================================
