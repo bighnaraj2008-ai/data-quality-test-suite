@@ -25,3 +25,6 @@ See [docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md) for triage playbooks.
 
 ## Data Governance
 Review our enterprise SLA commitments in [docs/DATA_GOVERNANCE.md](docs/DATA_GOVERNANCE.md).
+
+## Performance Optimization
+See [docs/PERFORMANCE.md](docs/PERFORMANCE.md) for scaling best practices.
