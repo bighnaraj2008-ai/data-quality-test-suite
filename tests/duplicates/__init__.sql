@@ -1,0 +1,4 @@
+-- ============================================================================
+-- Duplicate Uniqueness Checks Module
+-- Validates that natural keys, primary keys, and composite tuples are strictly unique.
+-- ============================================================================
