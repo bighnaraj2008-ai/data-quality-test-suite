@@ -19,3 +19,6 @@ Automated workflow `.github/workflows/ci.yml` runs on every pull request and pus
 
 ## Frequently Asked Questions
 See [docs/FAQ.md](docs/FAQ.md) for architectural FAQs.
+
+## Troubleshooting
+See [docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md) for triage playbooks.
