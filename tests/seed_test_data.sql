@@ -60,3 +60,17 @@ SELECT
     ((i * 13) % 120) + 1,
     date('now', '-' || (i % 60) || ' day')
 FROM seq;
+
+-- ---------------------------------------------------------------------------
+-- Intentional Anomaly Injection Fixtures (Validation Catalog)
+-- Uncomment or execute selectively to validate test suite failure detection:
+--
+-- 1. NULL primary key:
+--    INSERT INTO users (id, email, created_at, age, country) VALUES (999, NULL, date('now'), 30, 'US');
+-- 2. NULL foreign key:
+--    INSERT INTO events (id, event_type, user_id, occurred_at) VALUES (99999, 'page_view', NULL, date('now', '-1 day'));
+-- 3. Duplicate email:
+--    INSERT INTO users (id, email, created_at, age, country) VALUES (1000, 'user1@example.com', date('now'), 41, 'DE');
+-- 4. Duplicate event id:
+--    INSERT INTO events (id, event_type, user_id, occurred_at) VALUES (1, 'click', 5, date('now', '-2 day'));
+-- ---------------------------------------------------------------------------
