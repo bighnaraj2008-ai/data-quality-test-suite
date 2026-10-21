@@ -37,3 +37,6 @@ Check out [docs/METRICS_DICTIONARY.md](docs/METRICS_DICTIONARY.md) for full metr
 
 ## Alerting & Incident Response
 Incident procedures are documented in [docs/ALERTING.md](docs/ALERTING.md).
+
+## Telemetry & Benchmarks
+See [docs/BENCHMARK_TEMPLATE.md](docs/BENCHMARK_TEMPLATE.md) for telemetry reporting.
