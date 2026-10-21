@@ -28,3 +28,6 @@ Review our enterprise SLA commitments in [docs/DATA_GOVERNANCE.md](docs/DATA_GOV
 
 ## Performance Optimization
 See [docs/PERFORMANCE.md](docs/PERFORMANCE.md) for scaling best practices.
+
+## Writing Custom Tests
+Refer to the [docs/TEST_WRITING_GUIDE.md](docs/TEST_WRITING_GUIDE.md) tutorial.
